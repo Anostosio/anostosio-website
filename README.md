@@ -1,14 +1,50 @@
-# Anostosio° Portfolio Website
+# Anostosio° — Design & AI-assisted Product Portfolio
 
-A multilingual portfolio website for **Anostosio°**, a graphic designer focused on branding, visual communication, advertising materials, and digital design.
+Personal portfolio and project hub for **Anostosio°** — graphic design, branding, visual communication and AI-assisted product building.
 
-**Live:** https://anostosio.ru/
+**Portfolio:** https://anostosio.ru/
 
-## About
+## Selected AI-builder projects
 
-This project is my personal portfolio and professional presentation website. I designed the visual system, organized the content, prepared the assets, and built the site as a static web project.
+### 01 — AI Brand Brief
 
-The website is also the starting point of my transition from graphic design toward **AI-assisted product building, web development, and vibe coding**.
+**Live:** https://ai-brand-brief.vercel.app/  
+**GitHub:** https://github.com/Anostosio/ai-brand-brief
+
+A bilingual branding product that turns raw client context into a structured starter direction for positioning, tone of voice, key messages and visual direction.
+
+Highlights:
+- EN / RU interface
+- AI-ready serverless architecture
+- safe deterministic fallback
+- editable generated output
+- copy-to-clipboard
+- PDF export
+- Vercel deployment
+
+### 02 — Job Search CRM
+
+**Live:** https://job-search-crm-psi.vercel.app/  
+**GitHub:** https://github.com/Anostosio/job-search-crm
+
+A bilingual local-first CRM for vacancy tracking, follow-ups and transparent rule-based job matching.
+
+Highlights:
+- CRUD vacancy pipeline
+- search, filters and sorting
+- localStorage persistence
+- JSON backup / restore
+- live dashboard statistics
+- local vacancy matcher
+- explained strengths and gaps
+- EN / RU interface
+- Vercel deployment
+
+## About this repository
+
+This repository contains my main portfolio website. I designed the visual system, organized the content, prepared the assets and built the site as a multilingual static web project.
+
+The website is also the starting point of my transition from graphic design toward **AI-assisted product building, web development and vibe coding**.
 
 ## What I worked on
 
@@ -17,24 +53,25 @@ The website is also the starting point of my transition from graphic design towa
 - Responsive layout behavior
 - Portfolio presentation and content organization
 - Asset preparation and optimization
-- Russian, English, and Spanish versions
+- Russian, English and Spanish versions
 - Language switching with saved browser preference
 - SEO metadata, Open Graph, canonical and `hreflang` links
-- Structured data with Schema.org JSON-LD
-- Sitemap and robots configuration
-- Basic security / caching headers for compatible static hosting
-- Analytics consent logic
+- Schema.org JSON-LD
+- sitemap and robots configuration
+- security / caching headers for compatible static hosting
+- analytics consent logic
 
 ## Tech
 
 - HTML5
 - CSS3
 - Vanilla JavaScript
-- Static hosting architecture — no build step required
+- Static hosting architecture
 - WebP assets
 - Schema.org / JSON-LD
 - Open Graph / Twitter metadata
 - Yandex Metrica consent handling
+- Git / GitHub
 
 ## Project structure
 
@@ -48,13 +85,13 @@ The website is also the starting point of my transition from graphic design towa
 ├── en/                     # English version
 ├── es/                     # Spanish version
 ├── assets/                 # Images, portfolio assets and CV files
-├── fonts/                  # Local font files used by the website
+├── fonts/                  # Local font files
 ├── style.css               # Main styles
 ├── metrika-consent.js      # Analytics consent logic
 ├── sitemap.xml
 ├── robots.txt
 ├── site.webmanifest
-└── _headers                 # Static-host security / cache headers
+└── _headers
 ```
 
 ## Multilingual behavior
@@ -65,36 +102,25 @@ The site supports:
 - English — `/en/`
 - Spanish — `/es/`
 
-The home page detects the browser language and can redirect to the corresponding language version. The selected language is stored locally so the preference can be reused on later visits.
-
-## Deployment
-
-This is a static website. It can be deployed without a build process to services such as GitHub Pages, Netlify, Cloudflare Pages, or a traditional static web host.
-
-The production version is available at:
-
-**https://anostosio.ru/**
+The home page can detect browser language and redirect to the corresponding version. The selected language is stored locally so the preference can be reused later.
 
 ## What I learned
 
-Building and maintaining this website moved my work beyond static graphic design into a complete digital product. I worked with interface structure, responsive behavior, multilingual content, SEO, asset optimization, deployment constraints, and front-end implementation.
+Building and maintaining this website moved my work beyond static graphic design into a complete digital product. I worked with interface structure, responsive behavior, multilingual content, SEO, asset optimization and deployment constraints.
 
-It also gave me a practical base for learning GitHub, AI-assisted development, and product-oriented web development.
+The two newer projects above extend that foundation into application state, serverless architecture, AI-ready workflows, local-first data, explainable automation and product-oriented development.
 
-## Next steps
+## Current direction
 
-I plan to continue developing this project while building separate AI-assisted applications for my portfolio. Areas I want to improve include:
+I am developing a portfolio at the intersection of:
 
-- accessibility and semantic HTML
-- performance auditing and further asset optimization
-- cleaner component-like organization of repeated UI patterns
-- more structured JavaScript
-- automated quality checks
-- future interactive features built with AI-assisted workflows
+**Graphic Design → Product Thinking → AI-assisted Building → Working Web Products**
+
+My goal is not to present myself as a traditional software engineer. The focus is on using design experience, product reasoning and modern AI-assisted development tools to turn ideas into usable prototypes and deployed applications.
 
 ## Author
 
 **Anastasia / Anostosio°**  
-Graphic Design · Branding · Visual Communication · Digital Products
+Graphic Design · Branding · Visual Communication · AI-assisted Product Building
 
 Portfolio: https://anostosio.ru/
