@@ -1,0 +1,18 @@
+{
+  "name": "Anostosio° — графический дизайнер",
+  "short_name": "Anostosio°",
+  "description": "Айдентика, печать и цифровой дизайн.",
+  "lang": "ru",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#7f1715",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
