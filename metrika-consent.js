@@ -48,7 +48,74 @@
     }
   };
 
+  var productLabCopy = {
+    ru: {
+      eyebrow: 'ANOSTOSIO° / PRODUCT LAB',
+      title: 'ЦИФРОВЫЕ<br/>ПРОДУКТЫ<span>°</span>',
+      intro: 'Проекты на стыке дизайна, UX/UI и product building. Здесь я проектирую не только визуальную систему, но и сам рабочий сценарий продукта — от структуры и состояний до front-end и запуска.',
+      live: 'ОТКРЫТЬ ПРОДУКТ ↗',
+      github: 'GITHUB ↗',
+      brief: {
+        index: 'PRODUCT 01',
+        status: 'v1.2 · EN / RU · responsive',
+        category: 'AI-assisted brand strategy · UX/UI · Front-end',
+        description: 'Рабочая среда для создания редактируемого бренд-брифа из реального контекста проекта. Продукт явно отделяет подтвержденные данные от гипотез и того, что требует проверки, формирует 13 разделов, readiness-диагностику и два альтернативных стратегических направления.',
+        role: 'Роль: концепция продукта · бренд-методология · UX/UI · front-end · serverless integration · тестирование · deployment'
+      },
+      crm: {
+        index: 'PRODUCT 02',
+        status: 'v1.0 · EN / RU · local-first',
+        category: 'Productivity tool · UX/UI · Front-end',
+        description: 'Local-first CRM, которая превращает поиск работы в управляемую воронку возможностей и действий. Внутри — Today workspace, pipeline, карточка вакансии, прозрачный matcher, аналитика, защита от дублей и безопасный import/export без аккаунта и облачной базы.',
+        role: 'Роль: концепция продукта · UX/UI · информационная архитектура · front-end · data model · тестирование'
+      }
+    },
+    en: {
+      eyebrow: 'ANOSTOSIO° / PRODUCT LAB',
+      title: 'DIGITAL<br/>PRODUCTS<span>°</span>',
+      intro: 'Projects at the intersection of design, UX/UI and product building. Here I design not only the visual system but the working product flow itself — from structure and states to front-end and launch.',
+      live: 'OPEN PRODUCT ↗',
+      github: 'GITHUB ↗',
+      brief: {
+        index: 'PRODUCT 01',
+        status: 'v1.2 · EN / RU · responsive',
+        category: 'AI-assisted brand strategy · UX/UI · Front-end',
+        description: 'An editable brand-brief workspace built around real project context. It makes the difference between evidence, hypotheses and missing validation visible, then produces 13 structured sections, a readiness diagnostic and two alternative strategic routes.',
+        role: 'Role: product concept · brand methodology · UX/UI · front-end · serverless integration · testing · deployment'
+      },
+      crm: {
+        index: 'PRODUCT 02',
+        status: 'v1.0 · EN / RU · local-first',
+        category: 'Productivity tool · UX/UI · Front-end',
+        description: 'A local-first CRM that turns job search into a manageable pipeline of opportunities and actions. It combines a Today workspace, pipeline, vacancy detail, transparent matcher, analytics, duplicate protection and safe import/export without accounts or a cloud database.',
+        role: 'Role: product concept · UX/UI · information architecture · front-end · data model · testing'
+      }
+    },
+    es: {
+      eyebrow: 'ANOSTOSIO° / PRODUCT LAB',
+      title: 'PRODUCTOS<br/>DIGITALES<span>°</span>',
+      intro: 'Proyectos en la intersección entre diseño, UX/UI y product building. Aquí diseño no solo el sistema visual, sino también el flujo de trabajo del producto: estructura, estados, front-end y lanzamiento.',
+      live: 'ABRIR PRODUCTO ↗',
+      github: 'GITHUB ↗',
+      brief: {
+        index: 'PRODUCT 01',
+        status: 'v1.2 · EN / RU · responsive',
+        category: 'Estrategia de marca con IA · UX/UI · Front-end',
+        description: 'Un espacio editable para convertir el contexto real de un proyecto en un brief de marca. Hace visible qué está respaldado por datos, qué es hipótesis y qué necesita validación, y genera 13 secciones, un diagnóstico de preparación y dos rutas estratégicas alternativas.',
+        role: 'Rol: concepto de producto · metodología de marca · UX/UI · front-end · integración serverless · testing · deployment'
+      },
+      crm: {
+        index: 'PRODUCT 02',
+        status: 'v1.0 · EN / RU · local-first',
+        category: 'Herramienta de productividad · UX/UI · Front-end',
+        description: 'Una CRM local-first que convierte la búsqueda de empleo en un pipeline manejable de oportunidades y acciones. Incluye espacio Today, pipeline, ficha de vacante, matcher transparente, analítica, control de duplicados e import/export seguro sin cuentas ni base de datos en la nube.',
+        role: 'Rol: concepto de producto · UX/UI · arquitectura de información · front-end · modelo de datos · testing'
+      }
+    }
+  };
+
   var ui = copy[language] || copy.ru;
+  var productUi = productLabCopy[language] || productLabCopy.ru;
 
   function privacyHref() {
     if (language === 'en') return '/en/privacy.html';
@@ -68,6 +135,15 @@
     link.rel = 'stylesheet';
     link.href = '/legal.css';
     link.setAttribute('data-anostosio-legal-styles', '');
+    document.head.appendChild(link);
+  }
+
+  function ensureProductLabStyles() {
+    if (document.querySelector('link[data-anostosio-product-lab-styles]')) return;
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = '/product-lab.css';
+    link.setAttribute('data-anostosio-product-lab-styles', '');
     document.head.appendChild(link);
   }
 
@@ -295,6 +371,47 @@
     actions.insertAdjacentElement('afterend', notice);
   }
 
+  function productCard(project, title, liveHref, githubHref) {
+    return '<article class="product-lab-card">' +
+      '<div class="product-lab-card__top"><span>' + project.index + '</span><span>' + project.status + '</span></div>' +
+      '<div class="product-lab-card__content">' +
+        '<p class="product-lab-card__category">' + project.category + '</p>' +
+        '<h3>' + title + '<span>°</span></h3>' +
+        '<p class="product-lab-card__description">' + project.description + '</p>' +
+        '<p class="product-lab-card__role">' + project.role + '</p>' +
+      '</div>' +
+      '<div class="product-lab-card__actions">' +
+        '<a href="' + liveHref + '" target="_blank" rel="noopener noreferrer">' + productUi.live + '</a>' +
+        '<a href="' + githubHref + '" target="_blank" rel="noopener noreferrer">' + productUi.github + '</a>' +
+      '</div>' +
+    '</article>';
+  }
+
+  function addProductLab() {
+    var portfolio = document.querySelector('main.portfolio-page');
+    if (!portfolio || portfolio.querySelector('.product-lab')) return;
+
+    ensureProductLabStyles();
+
+    var section = document.createElement('section');
+    section.className = 'product-lab';
+    section.setAttribute('aria-label', 'Anostosio Product Lab');
+    section.innerHTML = '<div class="product-lab__inner">' +
+      '<p class="product-lab__eyebrow">' + productUi.eyebrow + '</p>' +
+      '<div class="product-lab__heading"><h2>' + productUi.title + '</h2><p>' + productUi.intro + '</p></div>' +
+      '<div class="product-lab__grid">' +
+        productCard(productUi.brief, 'Brand Brief Studio', 'https://ai-brand-brief.vercel.app/', 'https://github.com/Anostosio/ai-brand-brief') +
+        productCard(productUi.crm, 'Job Search CRM', 'https://job-search-crm-psi.vercel.app/', 'https://github.com/Anostosio/job-search-crm') +
+      '</div>' +
+    '</div>';
+    portfolio.appendChild(section);
+  }
+
+  function updateProjectCount() {
+    var count = document.querySelector('.projects__count');
+    if (count) count.textContent = '21';
+  }
+
   function createConsentUi() {
     var banner = document.createElement('section');
     banner.className = 'metric-consent';
@@ -388,6 +505,8 @@
     ensureLegalStyles();
     addLegalLinks();
     addBriefPrivacyNotice();
+    addProductLab();
+    updateProjectCount();
     bindGoals();
     createConsentUi();
   }
