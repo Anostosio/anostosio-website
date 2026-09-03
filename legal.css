@@ -17,6 +17,7 @@
 .legal-header {
   padding: 28px 0 42px;
   border-bottom: 1px solid var(--legal-line);
+  background: #fff;
 }
 
 .legal-container {
@@ -29,6 +30,12 @@
   align-items: center;
   justify-content: space-between;
   gap: 28px;
+}
+
+.legal-brand {
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
 }
 
 .legal-brand img {
@@ -123,10 +130,15 @@
 
 .legal-section {
   display: grid;
-  grid-template-columns: minmax(210px, .72fr) minmax(0, 1.75fr);
-  gap: clamp(30px, 7vw, 110px);
+  grid-template-columns: minmax(320px, .92fr) minmax(0, 1.58fr);
+  gap: clamp(38px, 5vw, 78px);
   padding: clamp(46px, 6vw, 82px) 0;
   border-bottom: 1px solid var(--legal-line);
+  align-items: start;
+}
+
+.legal-section > * {
+  min-width: 0;
 }
 
 .legal-section__title {
@@ -141,17 +153,22 @@
 }
 
 .legal-section h2 {
+  max-width: 100%;
   margin: 0;
-  font-size: clamp(26px, 3.5vw, 48px);
+  font-size: clamp(26px, 2.8vw, 42px);
   line-height: 1;
   letter-spacing: -.03em;
   text-transform: uppercase;
+  hyphens: auto;
+  overflow-wrap: break-word;
 }
 
 .legal-copy {
+  min-width: 0;
   max-width: 800px;
   font-size: 16px;
   line-height: 1.7;
+  overflow-wrap: anywhere;
 }
 
 .legal-copy p {
@@ -272,6 +289,20 @@
   white-space: nowrap;
 }
 
+/* Long legal headings (especially RU/ES) need more room than the body copy.
+   Stack the section before the two-column layout becomes cramped. */
+@media (max-width: 1180px) {
+  .legal-section {
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+
+  .legal-section h2 {
+    max-width: 22ch;
+    font-size: clamp(30px, 5vw, 48px);
+  }
+}
+
 @media (max-width: 760px) {
   .legal-container {
     width: min(100% - 28px, 1180px);
@@ -293,8 +324,12 @@
   }
 
   .legal-section {
-    grid-template-columns: 1fr;
-    gap: 26px;
+    gap: 22px;
+  }
+
+  .legal-section h2 {
+    max-width: 100%;
+    font-size: clamp(30px, 9vw, 44px);
   }
 
   .legal-hero h1 {
