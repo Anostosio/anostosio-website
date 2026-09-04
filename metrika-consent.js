@@ -57,7 +57,7 @@
       github: 'GITHUB ↗',
       brief: {
         index: 'PRODUCT 01',
-        status: 'v1.2 · EN / RU · responsive',
+        status: 'v1.3 · EN / RU · responsive',
         category: 'AI-assisted brand strategy · UX/UI · Front-end',
         description: 'Рабочая среда для создания редактируемого бренд-брифа из реального контекста проекта. Продукт явно отделяет подтвержденные данные от гипотез и того, что требует проверки, формирует 13 разделов, readiness-диагностику и два альтернативных стратегических направления.',
         role: 'Роль: концепция продукта · бренд-методология · UX/UI · front-end · serverless integration · тестирование · deployment'
@@ -78,7 +78,7 @@
       github: 'GITHUB ↗',
       brief: {
         index: 'PRODUCT 01',
-        status: 'v1.2 · EN / RU · responsive',
+        status: 'v1.3 · EN / RU · responsive',
         category: 'AI-assisted brand strategy · UX/UI · Front-end',
         description: 'An editable brand-brief workspace built around real project context. It makes the difference between evidence, hypotheses and missing validation visible, then produces 13 structured sections, a readiness diagnostic and two alternative strategic routes.',
         role: 'Role: product concept · brand methodology · UX/UI · front-end · serverless integration · testing · deployment'
@@ -99,7 +99,7 @@
       github: 'GITHUB ↗',
       brief: {
         index: 'PRODUCT 01',
-        status: 'v1.2 · EN / RU · responsive',
+        status: 'v1.3 · EN / RU · responsive',
         category: 'Estrategia de marca con IA · UX/UI · Front-end',
         description: 'Un espacio editable para convertir el contexto real de un proyecto en un brief de marca. Hace visible qué está respaldado por datos, qué es hipótesis y qué necesita validación, y genera 13 secciones, un diagnóstico de preparación y dos rutas estratégicas alternativas.',
         role: 'Rol: concepto de producto · metodología de marca · UX/UI · front-end · integración serverless · testing · deployment'
@@ -137,7 +137,6 @@
     link.setAttribute('data-anostosio-legal-styles', '');
     document.head.appendChild(link);
   }
-
   function ensureProductLabStyles() {
     if (document.querySelector('link[data-anostosio-product-lab-styles]')) return;
     var link = document.createElement('link');
@@ -400,7 +399,7 @@
       '<p class="product-lab__eyebrow">' + productUi.eyebrow + '</p>' +
       '<div class="product-lab__heading"><h2>' + productUi.title + '</h2><p>' + productUi.intro + '</p></div>' +
       '<div class="product-lab__grid">' +
-        productCard(productUi.brief, 'Brand Brief Studio', 'https://ai-brand-brief.vercel.app/', 'https://github.com/Anostosio/ai-brand-brief') +
+        productCard(productUi.brief, 'Brand Brief Studio', 'https://anostosio-product-lab.sourcecraft.site/ai-brand-brief/', 'https://github.com/Anostosio/ai-brand-brief') +
         productCard(productUi.crm, 'Job Search CRM', 'https://job-search-crm-psi.vercel.app/', 'https://github.com/Anostosio/job-search-crm') +
       '</div>' +
     '</div>';
