@@ -64,7 +64,7 @@
       },
       crm: {
         index: 'PRODUCT 02',
-        status: 'v1.0 · EN / RU · local-first',
+        status: 'v1.2 · EN / RU · local-first',
         category: 'Productivity tool · UX/UI · Front-end',
         description: 'Local-first CRM, которая превращает поиск работы в управляемую воронку возможностей и действий. Внутри — Today workspace, pipeline, карточка вакансии, прозрачный matcher, аналитика, защита от дублей и безопасный import/export без аккаунта и облачной базы.',
         role: 'Роль: концепция продукта · UX/UI · информационная архитектура · front-end · data model · тестирование'
@@ -85,7 +85,7 @@
       },
       crm: {
         index: 'PRODUCT 02',
-        status: 'v1.0 · EN / RU · local-first',
+        status: 'v1.2 · EN / RU · local-first',
         category: 'Productivity tool · UX/UI · Front-end',
         description: 'A local-first CRM that turns job search into a manageable pipeline of opportunities and actions. It combines a Today workspace, pipeline, vacancy detail, transparent matcher, analytics, duplicate protection and safe import/export without accounts or a cloud database.',
         role: 'Role: product concept · UX/UI · information architecture · front-end · data model · testing'
@@ -106,7 +106,7 @@
       },
       crm: {
         index: 'PRODUCT 02',
-        status: 'v1.0 · EN / RU · local-first',
+        status: 'v1.2 · EN / RU · local-first',
         category: 'Herramienta de productividad · UX/UI · Front-end',
         description: 'Una CRM local-first que convierte la búsqueda de empleo en un pipeline manejable de oportunidades y acciones. Incluye espacio Today, pipeline, ficha de vacante, matcher transparente, analítica, control de duplicados e import/export seguro sin cuentas ni base de datos en la nube.',
         role: 'Rol: concepto de producto · UX/UI · arquitectura de información · front-end · modelo de datos · testing'
@@ -294,6 +294,8 @@
     var href = link.getAttribute('href') || '';
     var absolute;
 
+    if (link.getAttribute('data-analytics')) return link.getAttribute('data-analytics');
+
     if (/^mailto:/i.test(href)) return 'email_click';
     if (/^https?:\/\/(t\.me|vk\.com|instagram\.com|www\.instagram\.com)/i.test(href)) return 'social_click';
 
@@ -307,6 +309,7 @@
     if (/\/portfolio\.html$/.test(absolute.pathname)) return 'portfolio_open';
     if (/\/price\.html$/.test(absolute.pathname)) return 'price_open';
     if (/\/brief\.html$/.test(absolute.pathname)) return 'brief_open';
+    if (/\/lab\/?$/.test(absolute.pathname)) return 'product_lab_open';
     return '';
   }
 
@@ -504,8 +507,6 @@
     ensureLegalStyles();
     addLegalLinks();
     addBriefPrivacyNotice();
-    addProductLab();
-    updateProjectCount();
     bindGoals();
     createConsentUi();
   }

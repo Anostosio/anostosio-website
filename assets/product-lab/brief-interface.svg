@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1120" viewBox="0 0 1920 1120" role="img" aria-labelledby="title desc">
+  <title id="title">Brand Brief Studio interface</title>
+  <desc id="desc">Чёткий векторный макет анкеты и результата бренд-брифа</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fffdfb"/><stop offset="1" stop-color="#f2ebe6"/></linearGradient>
+    <linearGradient id="wine" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#9d211e"/><stop offset="1" stop-color="#5e0d0d"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%"><feDropShadow dx="0" dy="22" stdDeviation="28" flood-color="#34100e" flood-opacity=".14"/></filter>
+  </defs>
+  <rect width="1920" height="1120" fill="#eee7e2"/>
+  <rect x="48" y="40" width="1824" height="1040" rx="22" fill="url(#paper)" filter="url(#shadow)"/>
+  <rect x="48" y="40" width="1824" height="70" rx="22" fill="#fff"/>
+  <rect x="48" y="88" width="1824" height="22" fill="#fff"/>
+  <circle cx="89" cy="75" r="8" fill="#7f1715"/><circle cx="119" cy="75" r="8" fill="#d6c9c2"/><circle cx="149" cy="75" r="8" fill="#d6c9c2"/>
+  <text x="190" y="82" fill="#6e625e" font-family="Arial, sans-serif" font-size="18">ANOSTOSIO° / PRODUCT LAB / BRIEF°</text>
+  <text x="112" y="194" fill="#7f1715" font-family="Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="3">BRAND BRIEF STUDIO</text>
+  <text x="112" y="266" fill="#1c1110" font-family="Arial, sans-serif" font-size="56" font-weight="700">Соберите ясный бренд-бриф</text>
+  <text x="112" y="330" fill="#1c1110" font-family="Arial, sans-serif" font-size="56" font-weight="700">из реального контекста.</text>
+  <text x="112" y="374" fill="#766b67" font-family="Arial, sans-serif" font-size="20">Анкета, проверка готовности и редактируемый результат — в одном рабочем пространстве.</text>
+
+  <g transform="translate(112 430)">
+    <rect width="790" height="564" rx="18" fill="#fff" stroke="#d9cdc7"/>
+    <text x="32" y="48" fill="#7f1715" font-family="Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="2">PROJECT INPUT</text>
+    <text x="32" y="84" fill="#1c1110" font-family="Arial, sans-serif" font-size="28" font-weight="700">Бренд-анкета</text>
+    <g transform="translate(575 29)"><rect width="178" height="52" rx="26" fill="#f5efeb"/><text x="89" y="33" text-anchor="middle" fill="#7f1715" font-family="Arial, sans-serif" font-size="15" font-weight="700">ПРИМЕР ДАННЫХ</text></g>
+    <text x="32" y="132" fill="#746965" font-family="Arial, sans-serif" font-size="15">ТИП ПРОЕКТА</text>
+    <rect x="32" y="148" width="726" height="58" rx="9" fill="#faf7f4" stroke="#d9cdc7"/><text x="52" y="184" fill="#241614" font-family="Arial, sans-serif" font-size="17">Новый digital-продукт</text>
+    <text x="32" y="244" fill="#746965" font-family="Arial, sans-serif" font-size="15">БИЗНЕС-ЗАДАЧА</text>
+    <rect x="32" y="260" width="726" height="92" rx="9" fill="#faf7f4" stroke="#d9cdc7"/><text x="52" y="296" fill="#241614" font-family="Arial, sans-serif" font-size="17">Сформировать понятное позиционирование и визуальный принцип</text><text x="52" y="326" fill="#746965" font-family="Arial, sans-serif" font-size="15">на основе подтверждённых вводных, а не общих формулировок.</text>
+    <g transform="translate(32 386)"><rect width="726" height="76" rx="12" fill="#f4ece8"/><text x="22" y="31" fill="#7f1715" font-family="Arial, sans-serif" font-size="14" font-weight="700">ГОТОВНОСТЬ БРИФА</text><text x="670" y="34" text-anchor="end" fill="#7f1715" font-family="Arial, sans-serif" font-size="28" font-weight="700">82</text><rect x="22" y="51" width="682" height="7" rx="4" fill="#dfd3ce"/><rect x="22" y="51" width="559" height="7" rx="4" fill="#7f1715"/></g>
+    <rect x="32" y="488" width="726" height="52" rx="9" fill="url(#wine)"/><text x="363" y="521" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="1">СОБРАТЬ ДОКАЗАТЕЛЬНЫЙ БРИФ  ↗</text>
+  </g>
+
+  <g transform="translate(930 430)">
+    <rect width="878" height="564" rx="18" fill="#fff" stroke="#d9cdc7"/>
+    <text x="32" y="48" fill="#7f1715" font-family="Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="2">WORKING DOCUMENT</text>
+    <text x="32" y="84" fill="#1c1110" font-family="Arial, sans-serif" font-size="28" font-weight="700">Mellow Club — рабочий бриф</text>
+    <g transform="translate(32 112)">
+      <rect width="814" height="88" rx="12" fill="#f7f2ef"/><text x="20" y="29" fill="#7f1715" font-family="Arial, sans-serif" font-size="13" font-weight="700">01  ПОЗИЦИОНИРОВАНИЕ</text><text x="20" y="61" fill="#2a1a18" font-family="Arial, sans-serif" font-size="17">Спокойный digital-сервис для короткой перезагрузки в рабочем дне.</text><rect x="672" y="19" width="122" height="28" rx="14" fill="#dfe9df"/><text x="733" y="38" text-anchor="middle" fill="#315a35" font-family="Arial, sans-serif" font-size="11" font-weight="700">GROUNDED</text>
+      <rect y="102" width="814" height="88" rx="12" fill="#f7f2ef"/><text x="20" y="131" fill="#7f1715" font-family="Arial, sans-serif" font-size="13" font-weight="700">02  ЦЕННОСТНОЕ ПРЕДЛОЖЕНИЕ</text><text x="20" y="163" fill="#2a1a18" font-family="Arial, sans-serif" font-size="17">Практичные пятиминутные ритуалы без давления продуктивности.</text><rect x="700" y="121" width="94" height="28" rx="14" fill="#f2e5cb"/><text x="747" y="140" text-anchor="middle" fill="#7d5b15" font-family="Arial, sans-serif" font-size="11" font-weight="700">MIXED</text>
+      <rect y="204" width="814" height="88" rx="12" fill="#f7f2ef"/><text x="20" y="233" fill="#7f1715" font-family="Arial, sans-serif" font-size="13" font-weight="700">03  ВИЗУАЛЬНОЕ НАПРАВЛЕНИЕ</text><text x="20" y="265" fill="#2a1a18" font-family="Arial, sans-serif" font-size="17">Тёплая типографика, ясный ритм и минимум отвлекающих сигналов.</text><rect x="654" y="223" width="140" height="28" rx="14" fill="#eadde7"/><text x="724" y="242" text-anchor="middle" fill="#714b68" font-family="Arial, sans-serif" font-size="11" font-weight="700">HYPOTHESIS</text>
+    </g>
+    <g transform="translate(32 448)"><rect width="250" height="72" rx="12" fill="#7f1715"/><text x="20" y="30" fill="#fff" font-family="Arial, sans-serif" font-size="12" font-weight="700">13 РАЗДЕЛОВ</text><text x="20" y="53" fill="#f5cbc8" font-family="Arial, sans-serif" font-size="13">редактируются вручную</text><rect x="266" width="260" height="72" rx="12" fill="#1c1110"/><text x="286" y="30" fill="#fff" font-family="Arial, sans-serif" font-size="12" font-weight="700">2 МАРШРУТА</text><text x="286" y="53" fill="#d8ceca" font-family="Arial, sans-serif" font-size="13">с преимуществами и рисками</text><rect x="542" width="272" height="72" rx="12" fill="#f1e7e2"/><text x="562" y="30" fill="#7f1715" font-family="Arial, sans-serif" font-size="12" font-weight="700">EXPORT</text><text x="562" y="53" fill="#625652" font-family="Arial, sans-serif" font-size="13">PDF · JSON · clipboard</text></g>
+  </g>
+</svg>

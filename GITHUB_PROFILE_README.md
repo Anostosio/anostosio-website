@@ -7,7 +7,7 @@ I am a designer moving into AI-assisted product building and vibe coding: combin
 ## Selected work
 
 ### AI Brand Brief
-**Live:** https://ai-brand-brief.vercel.app/  
+**Live:** https://anostosio-product-lab.sourcecraft.site/ai-brand-brief/
 **Repo:** https://github.com/Anostosio/ai-brand-brief
 
 Bilingual branding assistant with an AI-ready serverless architecture, safe fallback flow, editable structured output and PDF export.

@@ -8,7 +8,7 @@ Personal portfolio and project hub for **Anostosio°** — graphic design, brand
 
 ### 01 — AI Brand Brief
 
-**Live:** https://ai-brand-brief.vercel.app/  
+**Live:** https://anostosio-product-lab.sourcecraft.site/ai-brand-brief/
 **GitHub:** https://github.com/Anostosio/ai-brand-brief
 
 A bilingual branding product that turns raw client context into a structured starter direction for positioning, tone of voice, key messages and visual direction.
@@ -84,6 +84,10 @@ The website is also the starting point of my transition from graphic design towa
 ├── cv.html                 # CV page
 ├── en/                     # English version
 ├── es/                     # Spanish version
+├── lab/                    # Product Lab UI, project data and RU pages
+├── en/lab/                 # Product Lab English pages
+├── es/lab/                 # Product Lab Spanish pages
+├── scripts/build-product-lab.mjs # Static Product Lab page generator
 ├── assets/                 # Images, portfolio assets and CV files
 ├── fonts/                  # Local font files
 ├── style.css               # Main styles
@@ -101,6 +105,18 @@ The site supports:
 - Russian — `/`
 - English — `/en/`
 - Spanish — `/es/`
+
+Product Lab follows the same locale structure:
+
+- Russian — `/lab/`
+- English — `/en/lab/`
+- Spanish — `/es/lab/`
+
+Project content is stored in `lab/data/projects.mjs`. Run
+`node scripts/build-product-lab.mjs` after changing project data or shared
+Product Lab templates. `contentReady` and `caseStudyEnabled` keep product status
+separate from case-study readiness, so a future project can be added without
+rebuilding the page architecture.
 
 The home page can detect browser language and redirect to the corresponding version. The selected language is stored locally so the preference can be reused later.
 

@@ -95,6 +95,8 @@ Spanish: `/es/`
 Минимальный smoke test:
 
 - [ ] Главная / portfolio / price / brief / CV открываются в RU / EN / ES.
+- [ ] Product Lab, Brief°, Job Search CRM и OurWishList placeholder открываются в RU / EN / ES.
+- [ ] Переключение Design ↔ Product Lab работает на desktop и mobile.
 - [ ] Privacy и Legal открываются в RU / EN / ES.
 - [ ] В новом профиле браузера до consent нет загрузки `mc.yandex.ru/metrika/tag.js`.
 - [ ] `Decline` не запускает Метрику.
